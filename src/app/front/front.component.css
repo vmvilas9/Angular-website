@@ -54,6 +54,7 @@
 }
 @media(max-width: 1580px) {
   .headtext {
+    margin-top:2px;
     font-size: 2em;
   }
   .unbehaved-element {
@@ -62,16 +63,45 @@
 }
 @media(max-width: 980px) {
   .headtext {
+    margin-top:2px;
     font-size: 1.7em;
   }
 }
 @media(max-width: 760px) {
   .headtext {
-    font-size: 1.4em;
+    margin-top:2px;
+    font-size: 1.5em;
   }
 }
 @media(max-width: 480px) {
   .headtext2 {
+    margin-top:2px;
     font-size: 1.2em;
   }
+}
+@media(max-width: 320px) {
+  .headtext2 {
+    margin-top:2px;
+    font-size: 1em;
+  }
+}
+@media(max-width: 1580px) {
+  .heada {
+    font-size: 2em;
+  }
+}
+@media(max-width: 1180px) {
+  .heada{
+    font-size:1.8em;
+  }
+}
+@media(max-width: 780px) {
+  .heada {
+    font-size: 1.7em;
+  }
+}
+.headb{
+  float:right;
+  margin:4px;
+  border-radius: 12px;
 }
