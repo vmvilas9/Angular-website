@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var $: any;
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
@@ -8,14 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class ContentComponent implements OnInit {
   constructor() { }
 
-  ngOnInit() {}
-
-  public loadScript(url) {
-    console.log('preparing to load...')
-    let node = document.createElement('script');
-    node.src = url;
-    node.type = 'text/javascript';
-    document.getElementsByTagName('head')[0].appendChild(node);
- }
+  ngOnInit() {
+    $('#carouselFade').carousel();
+    $(".card").on({
+        mouseenter: function () {
+            $(this).children().show();
+        }, mouseleave: function () {
+            $(".card-text").hide();
+        }
+    });
+  }
 
 }
