@@ -106,8 +106,5 @@ body{
         }
 
         .text-p{
-            top: 50%;
-            position: absolute;
-            margin: auto;
-            left: 45%;
+            line-height: 25vh;
         }
